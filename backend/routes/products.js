@@ -4,13 +4,17 @@ const ProductModel = require("../models/product-model");
 
 // ****************************** PRODUCTS ******************************
 // HÄMTA ALLA PRODUKTER
-// GET
 
 /* GET products listing. */
-router.get('/', function(req, res, next) {
-    res.send('Products listing.');
-});
-
+router.get('/', async(req, res, next) => {
+    try {
+        const products = await ProductModel.find()
+        res.status(200).json(products)
+    } 
+    catch(error) {
+        console.error(error, "Something went wrong, could not get products listing.");
+    }
+})
 
 // ****************************** PRODUCTS/ID ***************************
 // HÄMTA SPECIFIK PRODUKT
