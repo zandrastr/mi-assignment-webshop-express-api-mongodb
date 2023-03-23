@@ -20,6 +20,16 @@ router.get('/', async(req, res, next) => {
 // HÄMTA SPECIFIK PRODUKT
 // GET
 
+router.get('/:id', async(req, res, next) => {
+    try {
+        const product = await ProductModel.findById(req.params.id)
+        res.status(200).json(product)
+    } 
+    catch(error) {
+        console.error(error, "Something went wrong, could not get product.");
+    }
+})
+
 
 // ****************************** PRODUCTS/ADD **************************
 // SKAPA PRODUKT
