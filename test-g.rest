@@ -13,7 +13,7 @@ POST http://localhost:3000/api/users/
 Content-Type: application/json
 
 {
-  "id": "// EN USER ID"
+  "id": "642079272986c03b2f3ecd38"
 }
 
 ###
@@ -35,8 +35,8 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-  "email": "// EN USER EMAIL",
-  "password": "// EN USER EMAIL"
+  "email": "test@mail.com",
+  "password": "test"
 }
 
 ###
@@ -53,7 +53,7 @@ GET http://localhost:3000/api/products
 ###
 
 // HÄMTA SPECIFIK PRODUKT
-GET http://localhost:3000/api/products/ // ID PÅ PRODUKT
+GET http://localhost:3000/api/products/642079f32986c03b2f3ecd3d
 
 ###
 
@@ -61,12 +61,57 @@ GET http://localhost:3000/api/products/ // ID PÅ PRODUKT
 POST http://localhost:3000/api/products/add
 Content-Type: application/json
 
-{
-  "name": "Produkt 1",
-  "description": "Beskrivning av produkt 1",
-  "price": 100, 
+[{
+  "name": "Largeleaf Geigertree",
+  "description": "Aenean fermentum.",
+  "price": 349,
   "lager": 10
-}
+}, {
+  "name": "Wormskjold's Aplodon Moss",
+  "description": "Donec ut mauris eget massa tempor convallis.",
+  "price": 330,
+  "lager": 6
+}, {
+  "name": "Salmon River Beardtongue",
+  "description": "Morbi non quam nec dui luctus rutrum.",
+  "price": 160,
+  "lager": 3
+}, {
+  "name": "Albizia",
+  "description": "Nam dui.",
+  "price": 244,
+  "lager": 11
+}, {
+  "name": "Pamohe",
+  "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
+  "price": 351,
+  "lager": 5
+}, {
+  "name": "Russian Wheatgrass",
+  "description": "Cras non velit nec nisi vulputate nonummy.",
+  "price": 476,
+  "lager": 3
+}, {
+  "name": "Lake Huron Tansy",
+  "description": "Nulla suscipit ligula in lacus.",
+  "price": 325,
+  "lager": 7
+}, {
+  "name": "Floating Primrose-willow",
+  "description": "Morbi a ipsum.",
+  "price": 109,
+  "lager": 9
+}, {
+  "name": "Gama Medic",
+  "description": "In quis justo.",
+  "price": 346,
+  "lager": 3
+}, {
+  "name": "Japanese Goose Neck Moss",
+  "description": "Maecenas ut massa quis augue luctus tincidunt.",
+  "price": 403,
+  "lager": 6
+}]
 
 ###
 
@@ -79,14 +124,14 @@ POST http://localhost:3000/api/orders/add
 Content-Type: application/json
 
 {
-  "user": "{{getUsers.response.body.$[0].id}}",
+  "user": "642079272986c03b2f3ecd38",
       "products": [
     {
-      "productId": "// ID PÅ EN PRODUKT",
+      "productId": "642079f32986c03b2f3ecd3f",
       "quantity": 1
     },
     {
-      "productId": "// ID PÅ EN PRODUKT",
+      "productId": "642079f32986c03b2f3ecd40",
       "quantity": 2
     }
   ]
