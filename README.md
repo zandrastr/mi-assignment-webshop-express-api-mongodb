@@ -5,7 +5,8 @@ The assignment already provided the predetermined endpoints, their names, and th
 
 #### Example screenshot from MongoDB 📸
 
-![2023-06-24 (15)](https://github.com/zandrastr/mi-assignment-webshop-express-api-mongodb/assets/95537845/64694576-78e9-486f-a326-55dafe12ae38)
+![2023-06-24 (15)](https://github.com/zandrastr/mi-assignment-webshop-express-api-mongodb/assets/95537845/72bd389c-c52c-4ffa-816b-72325d1cc062)
+
 
 #### Tech stack:
 
